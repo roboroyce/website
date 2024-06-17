@@ -3,32 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lure 3 - Fishing Lure Store</title>
+    <title>Fishing Lure Store - Lure 3</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="/logo.jpg">
 </head>
 <body>
     <header>
-        <div class="header-bar">
-            <button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
-            <h1>Fishing Lure Store</h1>
-            <img src="logo.jpg" alt="Fishing Lure Store Logo" class="logo">
+        <div class="menu-btn" id="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-        <nav id="menu" class="menu">
-            <a href="index.html">Home</a>
-            <a href="shop.php">Shop</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <h1>Fishing Lure Store</h1>
+        <img src="logo.jpg" alt="Fishing Lure Store Logo" class="logo">
     </header>
+    <nav id="sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
     <main>
-        <h2>Lure 3</h2>
         <div class="product-detail">
-            <img src="images/lure3.jpg" alt="Lure 3">
+            <img src="lure3.jpg" alt="Lure 3" class="product-image">
             <div class="product-info">
-                <h3>Lure 3</h3>
-                <p>This is a detailed description of Lure 3. It's great for catching big fish and works well in both freshwater and saltwater.</p>
+                <h2>Lure 3</h2>
                 <p class="price">$14.99</p>
+                <p class="description">Detailed description of Lure 3. This lure is designed for attracting medium-sized fish. It features a unique color pattern that mimics natural prey.</p>
+                <button onclick="window.location.href='https://pay.crackin-craw-baits.shop'">Buy</button>
             </div>
         </div>
     </main>
@@ -36,6 +40,12 @@
         <p>&copy; 2024 Fishing Lure Store</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        // JavaScript to handle menu toggle for mobile
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.toggle('active');
+            this.classList.toggle('hide');
+        });
+    </script>
 </body>
 </html>
