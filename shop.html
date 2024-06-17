@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fishing Lure Store - Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="menu-btn" id="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <h1>Fishing Lure Store</h1>
+        <img src="logo.jpg" alt="Fishing Lure Store Logo" class="logo">
+    </header>
+    <nav id="sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Our Lures</h2>
+        <div id="lures">
+            <div class="lure">
+                <a href="lure1.html">
+                    <img src="lure1.jpg" alt="Lure 1">
+                    <p>Lure 1 Description</p>
+                    <p>$9.99</p>
+                </a>
+            </div>
+            <div class="lure">
+                <a href="lure2.html">
+                    <img src="lure2.jpg" alt="Lure 2">
+                    <p>Lure 2 Description</p>
+                    <p>$12.99</p>
+                </a>
+            </div>
+            <!-- Add more lures as needed -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Fishing Lure Store</p>
+    </footer>
+
+    <script>
+        // JavaScript to handle menu toggle for mobile
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.toggle('active');
+            this.classList.toggle('hide');
+        });
+    </script>
+</body>
+</html>

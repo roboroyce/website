@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fishing Lure Store - Lure 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="menu-btn" id="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <h1>Fishing Lure Store</h1>
+        <img src="logo.jpg" alt="Fishing Lure Store Logo" class="logo">
+    </header>
+    <nav id="sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="product-detail">
+            <img src="lure2.jpg" alt="Lure 2" class="product-image">
+            <div class="product-info">
+                <h2>Lure 2</h2>
+                <p class="price">$12.99</p>
+                <p class="description">Detailed description of Lure 2. This lure is designed to attract a variety of fish species. With its unique design and vibrant colors, it is sure to enhance your fishing experience.</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Fishing Lure Store</p>
+    </footer>
+
+    <script>
+        // JavaScript to handle menu toggle for mobile
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.toggle('active');
+            this.classList.toggle('hide');
+        });
+    </script>
+</body>
+</html>
